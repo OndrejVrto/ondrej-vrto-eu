@@ -1,0 +1,26 @@
+footer {
+    padding: 1rem 4rem;
+    background-color: $gray-950;
+
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            svg {
+                height: 4rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .author {
+            color: $tertiary;
+        }
+    }
+}

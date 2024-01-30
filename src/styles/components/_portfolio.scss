@@ -1,0 +1,150 @@
+#portfolio {
+    background: linear-gradient(180deg, $background-color2, $background-color);
+
+    .portfolio-wrapper {
+        gap: 6em;
+        display: flex;
+        align-items: center;
+        margin-inline: auto;
+        padding-bottom: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        max-width: $wraper-width;
+
+        article {
+            gap: 2em;
+            display: flex;
+            font-size: 1rem;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .title.top,
+            .title.bottom {
+                font-size: 2em;
+                color: $gray-400;
+                text-align: center;
+                text-wrap: balance;
+                margin-inline: auto;
+                padding-inline: 0.5rem;
+            }
+
+            .title.bottom {
+                display: none;
+            }
+
+            @include r-sm {
+                font-size: 1.1rem;
+                flex-direction: row;
+
+                .title.top {
+                    display: none;
+                }
+
+                .title.bottom {
+                    display: inline-block;
+                }
+            }
+
+            @include r-md {
+                font-size: 1.2rem;
+            }
+        }
+
+        .portfolio-images {
+            width: 100%;
+            cursor: pointer;
+
+            @include r-sm {
+                max-width: 45%;
+
+                &.odd {
+                    order: 2;
+                }
+            }
+
+            @include r-lg {
+                max-width: 40%;
+            }
+
+            img {
+                width: 100%;
+
+                &:hover {
+                    outline-offset: 0.4em;
+                    outline: 0.25rem solid $secondary;
+                }
+            }
+        }
+
+        .texts {
+            width: 100%;
+            gap: 1.875em;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding: 0 1.5em 2em;
+            flex-direction: column;
+
+            @include r-sm {
+                padding: 0;
+
+                &.odd {
+                    order: 1;
+                }
+            }
+
+            p {
+                font-size: 1em;
+                color: $gray-500;
+                text-wrap: balance;
+            }
+
+            .technology {
+                gap: 2.5em;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                list-style-type: none;
+                justify-content: center;
+
+                img {
+                    height: 2em;
+                }
+            }
+
+            .buttons {
+                gap: 1.5em;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                button,
+                a {
+                    gap: 0.5em;
+                    width: 12em;
+                    display: flex;
+                    cursor: pointer;
+                    font-size: 0.8em;
+                    padding: 0.625em;
+                    font-weight: 700;
+                    align-items: center;
+                    border-radius: 0.625em;
+                    justify-content: center;
+                    background-color: transparent;
+                    border: 0.0625rem solid $white;
+
+                    &:hover {
+                        background-color: $secondary;
+                    }
+
+                    img {
+                        width: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}

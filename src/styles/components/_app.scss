@@ -1,0 +1,18 @@
+section {
+    overflow: hidden;
+    max-width: 100dvw;
+    padding-top: 4rem;
+    scroll-snap-align: start;
+}
+
+section .wrapper {
+    margin-inline: auto;
+    width: min($wraper-width, 100dvw - 4rem);
+}
+
+section h1.title {
+    font-size: 3em;
+    color: $tertiary;
+    text-align: center;
+    margin-bottom: 4rem;
+}

@@ -1,0 +1,22 @@
+#navbar {
+    padding: 2rem 4rem;
+
+    .social {
+        gap: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+            width: 1.3rem;
+        }
+
+        @include r-md {
+            gap: 2rem;
+
+            img {
+                width: 1.6rem;
+            }
+        }
+    }
+}

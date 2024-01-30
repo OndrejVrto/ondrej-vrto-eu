@@ -1,0 +1,55 @@
+#contact {
+    padding-bottom: 10rem;
+    background: linear-gradient(180deg, $background-color, $background-color2);
+
+    .wrapper {
+        gap: 8rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @include r-sm {
+            flex-direction: row;
+        }
+
+        .texts {
+            gap: 20px;
+            display: flex;
+            font-size: 1.5rem;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+
+            @include r-sm {
+                font-size: 1.8rem;
+            }
+
+            @include r-lg {
+                font-size: 2rem;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                color: $secondary;
+                font-size: 1.2em;
+            }
+
+            span {
+                font-weight: 300;
+            }
+        }
+
+        .phone {
+            stroke: $tertiary;
+
+            svg {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}

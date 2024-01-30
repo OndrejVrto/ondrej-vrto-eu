@@ -1,0 +1,92 @@
+#technologies {
+    padding-bottom: 4rem;
+    background-color: $background-color;
+
+    .wrapper {
+        gap: 5rem;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.5em;
+            color: $secondary;
+            text-wrap: balance;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    img {
+        height: 2.5em;
+    }
+}
+
+ul.technology {
+    gap: 2.5rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+
+    &.primary img {
+        height: 4.5em;
+    }
+
+    &.secondary img {
+        height: 3em;
+    }
+
+    li {
+        position: relative;
+
+        .popover {
+            top: 135%;
+            left: -4.5em;
+            right: -4.5em;
+            z-index: 99;
+            text-align: center;
+            position: absolute;
+            border-radius: 0.25em;
+            padding: 0.4em 0.4em 0.8em;
+            background-color: $secondary;
+
+            h3 {
+                margin: 0;
+            }
+        }
+
+        progress {
+            margin: 0;
+            width: 90%;
+            height: 0.5rem;
+            border-radius: 24px;
+            background: $primary;
+        }
+
+        progress::-moz-progress-value,
+        progress::-webkit-progress-value {
+            border-radius: 24px;
+            background: $primary;
+        }
+
+        progress.low::-moz-progress-bar,
+        progress.low::-webkit-progress-bar {
+            border-radius: 24px;
+            background: #ff4242;
+        }
+        progress::-moz-progress-bar,
+        progress::-webkit-progress-bar,
+        progress.medium::-moz-progress-bar,
+        progress.medium::-webkit-progress-bar {
+            border-radius: 24px;
+            background: $tertiary;
+        }
+        progress.high::-moz-progress-bar,
+        progress.high::-webkit-progress-bar {
+            border-radius: 24px;
+            background: #79ff2c;
+        }
+    }
+}

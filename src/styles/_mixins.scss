@@ -1,0 +1,111 @@
+// Responsive media mixins
+@mixin r-mobil-landscape {
+    @media screen and (max-height: #{$break-2xs}) and (max-width: #{$break-md}) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin r-h-2sm {
+    @media screen and (min-height: #{$break-2sm}) {
+        @content;
+    }
+}
+@mixin r-3xs {
+    @media screen and (min-width: #{$break-3xs}) {
+        @content;
+    }
+}
+@mixin r-2xs {
+    @media screen and (min-width: #{$break-2xs}) {
+        @content;
+    }
+}
+@mixin r-xs {
+    @media screen and (min-width: #{$break-xs}) {
+        @content;
+    }
+}
+@mixin r-sm {
+    @media screen and (min-width: #{$break-sm}) {
+        @content;
+    }
+}
+@mixin r-2sm {
+    @media screen and (min-width: #{$break-2sm}) {
+        @content;
+    }
+}
+@mixin r-md {
+    @media (min-width: #{$break-md}) {
+        @content;
+    }
+}
+@mixin r-lg {
+    @media (min-width: #{$break-lg}) {
+        @content;
+    }
+}
+@mixin r-xl {
+    @media (min-width: #{$break-xl}) {
+        @content;
+    }
+}
+@mixin r-2xl {
+    @media (min-width: #{$break-2xl}) {
+        @content;
+    }
+}
+@mixin r-2K {
+    @media (min-width: #{$break-2K}) and (max-aspect-ratio: 16/9) {
+        @content;
+    }
+}
+@mixin r-4K {
+    @media (min-width: #{$break-4K}) and (max-aspect-ratio: 16/9) {
+        @content;
+    }
+}
+@mixin r-custom($bp) {
+    @media (min-width: #{$bp}) {
+        @content;
+    }
+}
+
+@mixin container-modul($breakpoint) {
+    @container modul ( width > #{$breakpoint} ) {
+        @content;
+    }
+}
+
+@mixin container-formular($breakpoint) {
+    @container formular_content ( width > #{$breakpoint} ) {
+        @content;
+    }
+}
+
+@mixin dark-mode {
+    @at-root {
+        @each $selector in & {
+            html.dark #{$selector} {
+                @content;
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin light-mode {
+    @at-root {
+        @each $selector in & {
+            html.light #{$selector} {
+                @content;
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        @content;
+    }
+}
