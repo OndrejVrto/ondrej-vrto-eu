@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import myPersonalPhoto from "../../../assets/ai5.png";
-// import myPersonalPhoto from "../../../assets/ing-ondrej-vrto2.png";
+import myPersonalPhoto from "../../../assets/images/personal-photo/ai5.png";
 
 const textVariants = {
     initial: {

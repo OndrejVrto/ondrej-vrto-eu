@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import githubLogo from "../../../assets/social/github-logo.svg";
-import facebookLogo from "../../../assets/social/facebook-logo.svg";
-import linkedInLogo from "../../../assets/social/linkedin-logo.svg";
-// import youtubeLogo from "../../../assets/social/youtube-logo.svg";
-// import twitterLogo from "../../../assets/social/twitter-logo-new.svg";
-import stackOverflowLogo from "../../../assets/social/stackoverflow-logo.svg";
+import githubLogo from "../../../assets/images/social/github-logo.svg";
+import facebookLogo from "../../../assets/images/social/facebook-logo.svg";
+import linkedInLogo from "../../../assets/images/social/linkedin-logo.svg";
+// import youtubeLogo from "../../../assets/images/social/youtube-logo.svg";
+// import twitterLogo from "../../../assets/images/social/twitter-logo-new.svg";
+import stackOverflowLogo from "../../../assets/images/social/stackoverflow-logo.svg";
 
 const whileHover = { scale: 1.4 };
 const transition = { type: "spring", stiffness: 400, damping: 10 };

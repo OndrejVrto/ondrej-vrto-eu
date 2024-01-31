@@ -10,8 +10,8 @@ import Technologies from "./components/technologies/Technologies";
 export const SECTIONS = [
     { id: "hero", title: "Domov", element: <Hero /> },
     { id: "technologies", title: "Technológie", element: <Technologies /> },
-    // { id: "biography", title: "Životopis", element: <Biography /> },
     { id: "portfolio", title: "Portfólio", element: <Portfolio /> },
+    // { id: "biography", title: "Životopis", element: <Biography /> },
     { id: "contact", title: "Kontakt", element: <Contact /> },
 ];
 
