@@ -1,10 +1,10 @@
 import { useState } from "react";
 import SinglePortfolio from "./SinglePortfolio";
 import PortfolioFilter from "./PortfolioFilter.jsx";
-import PORTFOLIO_ITEMS from "../../portfolio-items.js";
+import { PORTFOLIO_ITEMS } from "../../portfolio-items.js";
 
 const sortPortfolio = (portfolio) =>
-    portfolio.sort((a, b) => a.order > b.order);
+    portfolio.sort((a, b) => +a.order - +b.order);
 
 const Portfolio = () => {
     const [filteredPortfolio, setFilteredPortfolio] = useState(

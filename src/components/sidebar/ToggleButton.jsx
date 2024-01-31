@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const ToggleButton = ({ setOpen }) => {
     return (
-        <button onClick={() => setOpen((prev) => !prev)}>
+        <button
+            onClick={() => setOpen((prev) => !prev)}
+            aria-label="Menu toggle button"
+        >
             <svg
                 strokeWidth="3"
                 strokeLinecap="round"

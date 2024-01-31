@@ -1,9 +1,10 @@
 const LIST = {
     primary: [
         { title: "Laravel", skill: 80, image: "laravel.svg" },
-        { title: "Php", skill: 90, image: "php.svg" },
-        { title: "Sass", skill: 95, image: "sass.svg" },
+        { title: "SQL", skill: 60, image: "sql.svg" },
         { title: "React", skill: 40, image: "react.svg" },
+        { title: "Php", skill: 90, image: "php.svg" },
+        { title: "Sass", skill: 95, image: "sass2.svg" },
         { title: "TypeScript", skill: 60, image: "typescript.svg" },
     ],
 
@@ -11,7 +12,6 @@ const LIST = {
         { title: "Git", skill: 80, image: "git.svg" },
         { title: "WordPress", skill: 50, image: "wordpress.svg" },
         { title: "TailwindCss", skill: 80, image: "tailwindcss.svg" },
-        { title: "MySql", skill: 60, image: "mysql2.svg" },
         { title: "Bootstrap", skill: 95, image: "bootstrap.svg" },
         { title: "AutoHotKey", skill: 60, image: "autohotkey.svg" },
         { title: "VBA", skill: 80, image: "vba.svg" },
@@ -19,15 +19,17 @@ const LIST = {
         { title: "Html5", skill: 95, image: "html5.svg" },
         { title: "JavaScript", skill: 80, image: "javascript.svg" },
         { title: "JQuery", skill: 95, image: "jquery2.svg" },
-        { title: "Livewire", skill: 50, image: "liweware.svg" },
+        { title: "Livewire", skill: 60, image: "liweware.svg" },
         { title: "Power BI", skill: 40, image: "power-bi.svg" },
         { title: "Laravel Orchid", skill: 80, image: "laravel-orchid.svg" },
+        { title: "MySql", skill: 60, image: "mysql2.svg" },
     ],
 
     tertiary: [
         { title: "Visual Studio Code", skill: 90, image: "visual-studio-code.svg" },
         { title: "Composer", skill: 100, image: "composer.svg" },
-        { title: "Npm", skill: 90, image: "npm.svg" },
+        // { title: "Npm", skill: 90, image: "npm.svg" },
+        { title: "Yarn", skill: 75, image: "yarn.svg" },
         { title: "Redux", skill: 40, image: "redux.svg" },
         { title: "Docker", skill: 50, image: "docker.svg" },
         { title: "Postman", skill: 60, image: "postman.svg" },

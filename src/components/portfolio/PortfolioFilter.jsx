@@ -11,35 +11,39 @@ export default function PortfolioFilter({ handleFilter }) {
         }
     }
 
+    function getClassButton(type) {
+        return type === tag ? "button active" : "button";
+    }
+
     return (
         <div id="portfolio-filter">
             <button
-                className={tag === "configurator" && "active"}
                 onClick={() => handleTag("configurator")}
+                className={getClassButton("configurator")}
             >
                 Konfigurátory
             </button>
             <button
-                className={tag === "admin" && "active"}
                 onClick={() => handleTag("admin")}
+                className={getClassButton("admin")}
             >
                 Administrácia na mieru
             </button>
             <button
-                className={tag === "package" && "active"}
                 onClick={() => handleTag("package")}
+                className={getClassButton("package")}
             >
                 Balíčky
             </button>
             <button
-                className={tag === "web" && "active"}
                 onClick={() => handleTag("web")}
+                className={getClassButton("web")}
             >
                 Web podľa designu
             </button>
             <button
-                className={tag === null ? "reset active" : "reset"}
                 onClick={() => handleTag(null)}
+                className={tag === null ? "reset active" : "reset"}
             >
                 <img src={clearIcon} alt="Reset filter icon" />
             </button>

@@ -9,7 +9,7 @@ const variants = {
             stiffness: 20,
             type: "spring",
         },
-        clipPath: "circle(50rem at 3.125rem 3rem)",
+        clipPath: "circle(50rem at 3rem 3rem)",
     },
     closed: {
         transition: {
@@ -18,7 +18,7 @@ const variants = {
             type: "spring",
             stiffness: 400,
         },
-        clipPath: "circle(1.875rem at 3.125rem 3rem)",
+        clipPath: "circle(1.875rem at 3rem 3rem)",
     },
 };
 const Sidebar = () => {

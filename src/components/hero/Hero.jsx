@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import myPersonalPhoto from "../../../assets/images/personal-photo/ai5.png";
+import { CLOUDINARY_ASSET_URL } from "../../portfolio-items";
 
 const textVariants = {
     initial: {
@@ -55,10 +55,18 @@ const Hero = () => {
                     <motion.h1 variants={textVariants}>Web developer</motion.h1>
 
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.a variants={textVariants} href="#portfolio">
+                        <motion.a
+                            href="#portfolio"
+                            className="button"
+                            variants={textVariants}
+                        >
                             Výber z mojich prác
                         </motion.a>
-                        <motion.a variants={textVariants} href="#contact">
+                        <motion.a
+                            href="#contact"
+                            className="button"
+                            variants={textVariants}
+                        >
                             Kontaktuj ma
                         </motion.a>
                     </motion.div>
@@ -93,8 +101,11 @@ const Hero = () => {
 
             <div className="images">
                 <img
-                    src={myPersonalPhoto}
-                    alt="Osobná fotografia Ondrej Vrťo."
+                    alt="Ondrej Vrťo. Portrét generovaný AI podľa fotografií."
+                    src={
+                        CLOUDINARY_ASSET_URL +
+                        "/photo/ai-generated-portrait-for-ondrej-vrto.png"
+                    }
                 />
             </div>
         </>
