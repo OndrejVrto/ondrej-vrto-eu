@@ -14,6 +14,7 @@
             display: flex;
             font-size: 1rem;
             padding-block: 7em;
+            padding-inline: 1em;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
@@ -83,12 +84,9 @@
             display: flex;
             text-align: center;
             align-items: center;
-            padding: 0 1.5em 2em;
             flex-direction: column;
 
             @include r-sm {
-                padding: 0;
-
                 &.odd {
                     order: 1;
                 }
@@ -129,13 +127,19 @@
 #portfolio-filter {
     gap: 1rem;
     display: flex;
+    flex-wrap: wrap;
+    text-wrap: nowrap;
     margin-inline: auto;
     align-items: center;
     justify-content: center;
 
     .button {
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1em;
+
+        @include r-md {
+            font-size: 1.2em;
+        }
     }
 
     .reset {
