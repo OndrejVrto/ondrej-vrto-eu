@@ -49,7 +49,23 @@ export default function PortfolioFilter({ handleFilter }) {
                 onClick={() => handleTag(null)}
                 className={tag === null ? "reset active" : "reset"}
             >
-                <img src="/images/clear-all.svg" alt="Reset filter icon" />
+                <svg
+                    viewBox="-4 -4 23.9 23.9"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect
+                        x="-4"
+                        y="-4"
+                        rx="50%"
+                        width="23.8"
+                        height="23.9"
+                        fill="transparent"
+                    />
+                    <path
+                        fill="currentcolor"
+                        d="M14 0a1 1 0 0 1 .7 1.7l-.8.8A8 8 0 1 1 0 9.1 1 1 0 0 1 2 9a6 6 0 1 0 10.3-5l-.7.8A1 1 0 0 1 10 4V0h4ZM1.5 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm2.2-2.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+                    />
+                </svg>
             </button>
         </div>
     );

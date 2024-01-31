@@ -150,8 +150,8 @@
     justify-content: center;
 
     .button {
-        font-weight: 600;
         font-size: 1em;
+        font-weight: 600;
 
         @include r-md {
             font-size: 1.2em;
@@ -159,14 +159,24 @@
     }
 
     .reset {
-        width: 3em;
         border: none;
         cursor: pointer;
-        margin-left: 1rem;
+        color: $gray-400;
+        border-radius: 50%;
         background-color: transparent;
 
-        &:hover {
+        svg {
+            height: 3em;
+            transform-origin: center center;
+        }
+
+        &:hover svg {
+            color: $white;
             animation: rotating 5s infinite linear;
+
+            rect {
+                fill: $secondary;
+            }
         }
     }
 }

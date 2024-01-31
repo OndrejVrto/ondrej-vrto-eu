@@ -61,6 +61,12 @@ function Technologies() {
                     ))}
                 </ul>
             </div>
+
+            <p className="unknown-technology">
+                Používaš technológiu ktorú nemám v zozname?{" "}
+                <strong>SUPER</strong>, chcem sa ju doučiť!{" "}
+                <a href="#contact">Volaj</a>
+            </p>
         </div>
     );
 }
