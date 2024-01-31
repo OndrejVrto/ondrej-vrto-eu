@@ -7,8 +7,16 @@ const isBuildProcess = process.argv.includes('build')
 const copyContent = viteStaticCopy({
     targets: [
         {
-            src: 'assets' + '/[!.]*',
-            dest: 'assets',
+            src: 'assets/images' + '/[!.]*',
+            dest: 'assets/images',
+        },
+        {
+            src: 'assets/icons' + '/[!.]*',
+            dest: 'icons',
+        },
+        {
+            src: 'assets/favicon.ico',
+            dest: '',
         },
     ],
 });
