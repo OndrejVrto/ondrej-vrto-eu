@@ -1,9 +1,11 @@
 footer {
-    padding: 1rem 4rem;
+    position: relative;
+    padding: 1rem 7rem 1rem 2rem;
     background-color: $gray-950;
 
     .footer-wrapper {
         display: flex;
+        column-gap: 2em;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
@@ -21,6 +23,33 @@ footer {
 
         .author {
             color: $tertiary;
+        }
+    }
+
+    .github-corner {
+        svg {
+            right: 0;
+            bottom: 0;
+            border: 0;
+            height: 100%;
+            fill: $white;
+            color: $gray-950;
+            position: absolute;
+
+            .octo-arm {
+                transform-origin: 130px 106px;
+                animation: octocat-wave 1s ease-in-out infinite;
+
+                @include r-lg {
+                    animation: none;
+                }
+            }
+        }
+
+        @include r-lg {
+            &:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
         }
     }
 }

@@ -10,14 +10,25 @@
         max-width: $wraper-width;
 
         article {
-            gap: 2em;
-            display: flex;
-            font-size: 1rem;
-            padding-block: 7em;
+            padding-block: 6em;
             padding-inline: 1em;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
+
+            .body {
+                gap: 2em;
+                display: flex;
+                font-size: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                @include r-sm {
+                    flex-direction: row;
+                }
+            }
+
+            .title.top {
+                margin-bottom: 1em;
+            }
 
             .title.top,
             .title.bottom {
@@ -35,7 +46,10 @@
 
             @include r-sm {
                 font-size: 1.1rem;
-                flex-direction: row;
+            }
+
+            @include r-md {
+                font-size: 1.2rem;
 
                 .title.top {
                     display: none;
@@ -44,10 +58,6 @@
                 .title.bottom {
                     display: inline-block;
                 }
-            }
-
-            @include r-md {
-                font-size: 1.2rem;
             }
         }
 
@@ -113,12 +123,17 @@
             }
 
             .buttons {
-                gap: 1.5em;
+                gap: 1em;
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 align-items: center;
                 justify-content: center;
+
+                @include r-md {
+                    gap: 1.5em;
+                    font-size: 1rem;
+                }
             }
         }
     }

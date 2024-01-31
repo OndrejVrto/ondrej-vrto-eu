@@ -1,5 +1,6 @@
 section {
     overflow: hidden;
+    max-width: 100vw;
     max-width: 100dvw;
     padding-top: 4rem;
     scroll-snap-align: start;
@@ -7,6 +8,7 @@ section {
 
 section .wrapper {
     margin-inline: auto;
+    width: min($wraper-width, 100vw - 4rem);
     width: min($wraper-width, 100dvw - 4rem);
 }
 

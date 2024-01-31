@@ -35,7 +35,7 @@ export default function Technology({
                 alt={technology.title}
                 title={technology.title}
                 whileHover={{ scale: 1.3 }}
-                src={`./assets/images/technologies/${technology.image}`}
+                src={`/images/technologies/${technology.image}`}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
             />
             {isOpen && !poppoverOff && (

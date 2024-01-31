@@ -2,6 +2,7 @@
     overflow: hidden;
     padding-top: unset;
     position: relative;
+    height: calc(100vh - 100px);
     height: calc(100dvh - 100px);
     background: linear-gradient(180deg, $background-color, $background-color2);
 
@@ -13,11 +14,14 @@
         margin: auto;
 
         @include r-sm {
+            margin-top: 5vh;
             margin-top: 5dvh;
+            margin-left: 15vw;
             margin-left: 15dvw;
         }
 
         @include r-md {
+            margin-top: 15vh;
             margin-top: 15dvh;
         }
     }
@@ -85,11 +89,13 @@
 
         @include r-md {
             height: 70%;
+            right: 10vw;
             right: 10dvw;
         }
 
         @include r-xl {
             height: 80%;
+            right: 20vw;
             right: 20dvw;
         }
 
@@ -105,8 +111,10 @@
         width: 50%;
         color: $white;
         opacity: 0.04;
+        bottom: -13vh;
         bottom: -13dvh;
         cursor: default;
+        font-size: 50vh;
         font-size: 50dvh;
         font-weight: bold;
         position: absolute;

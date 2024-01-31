@@ -20,12 +20,19 @@ const variants = {
         },
         clipPath: "circle(1.875rem at 3rem 3rem)",
     },
+    initial: {
+        clipPath: "circle(1.875rem at 3rem 3rem)",
+    },
 };
 const Sidebar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <motion.div id="sidebar" animate={open ? "open" : "closed"}>
+        <motion.div
+            id="sidebar"
+            initial="initial"
+            animate={open ? "open" : "closed"}
+        >
             <motion.div className="menu" variants={variants}>
                 <Links closeMenu={() => setOpen(false)} />
             </motion.div>

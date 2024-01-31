@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import clearIcon from "../../../assets/images/clear-all.svg";
 
 export default function PortfolioFilter({ handleFilter }) {
     const [tag, setTag] = useState(null);
@@ -18,28 +17,28 @@ export default function PortfolioFilter({ handleFilter }) {
     return (
         <div id="portfolio-filter">
             <button
-                aria-label="Filtrovať výsledky podľa kľúčového slova: Konfigurátor"
+                aria-description="Filtrovať výsledky podľa kľúčového slova: Konfigurátor"
                 onClick={() => handleTag("configurator")}
                 className={getClassButton("configurator")}
             >
                 Konfigurátory
             </button>
             <button
-                aria-label="Filtrovať výsledky podľa kľúčového slova: Administrácia"
+                aria-description="Filtrovať výsledky podľa kľúčového slova: Administrácia"
                 onClick={() => handleTag("admin")}
                 className={getClassButton("admin")}
             >
                 Administrácia na mieru
             </button>
             <button
-                aria-label="Filtrovať výsledky podľa kľúčového slova: Balíček"
+                aria-description="Filtrovať výsledky podľa kľúčového slova: Balíček"
                 onClick={() => handleTag("package")}
                 className={getClassButton("package")}
             >
                 Balíčky
             </button>
             <button
-                aria-label="Filtrovať výsledky podľa kľúčového slova: Web podľa designu"
+                aria-description="Filtrovať výsledky podľa kľúčového slova: Web podľa designu"
                 onClick={() => handleTag("web")}
                 className={getClassButton("web")}
             >
@@ -50,7 +49,7 @@ export default function PortfolioFilter({ handleFilter }) {
                 onClick={() => handleTag(null)}
                 className={tag === null ? "reset active" : "reset"}
             >
-                <img src={clearIcon} alt="Reset filter icon" />
+                <img src="/images/clear-all.svg" alt="Reset filter icon" />
             </button>
         </div>
     );

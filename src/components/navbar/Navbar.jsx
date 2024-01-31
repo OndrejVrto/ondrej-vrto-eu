@@ -1,10 +1,4 @@
 import { motion } from "framer-motion";
-import githubLogo from "../../../assets/images/social/github-logo.svg";
-import facebookLogo from "../../../assets/images/social/facebook-logo.svg";
-import linkedInLogo from "../../../assets/images/social/linkedin-logo.svg";
-// import youtubeLogo from "../../../assets/images/social/youtube-logo.svg";
-// import twitterLogo from "../../../assets/images/social/twitter-logo-new.svg";
-// import stackOverflowLogo from "../../../assets/images/social/stackoverflow-logo.svg";
 
 const whileHover = { scale: 1.4 };
 const transition = { type: "spring", stiffness: 400, damping: 10 };
@@ -18,42 +12,51 @@ const Navbar = () => {
                     whileHover={whileHover}
                     href="https://www.linkedin.com/in/ing-ondrej-vrto-iwe/"
                 >
-                    <img src={linkedInLogo} alt="Logo LinkedIn" />
+                    <img
+                        alt="Logo LinkedIn"
+                        src="/images/social/linkedin-logo.svg"
+                    />
                 </motion.a>
                 <motion.a
                     transition={transition}
                     whileHover={whileHover}
                     href="https://www.facebook.com/Ondrej.Vrto"
                 >
-                    <img src={facebookLogo} alt="Logo Facebook" />
+                    <img
+                        alt="Logo Facebook"
+                        src="/images/social/facebook-logo.svg"
+                    />
                 </motion.a>
                 {/* <motion.a
                     transition={transition}
                     whileHover={whileHover}
                     href="https://www.youtube.com/channel/UCpjE98HHZwT-10zEvnOY7YQ"
                 >
-                    <img src={youtubeLogo} alt="Logo YouTube" />
+                    <img src="/images/social/youtube-logo.svg" alt="Logo YouTube" />
                 </motion.a> */}
                 {/* <motion.a
                     transition={transition}
                     whileHover={whileHover}
                     href="https://twitter.com/OndrejVrto"
                 >
-                    <img src={twitterLogo} alt="Logo Twitter" />
+                    <img src="/images/social/twitter-logo-new.svg" alt="Logo Twitter" />
                 </motion.a> */}
                 {/* <motion.a
                     transition={transition}
                     whileHover={whileHover}
                     href="https://stackoverflow.com/users/18586849/donondrej"
                 >
-                    <img src={stackOverflowLogo} alt="Logo StackOverflow" />
+                    <img src="/images/social/stackoverflow-logo.svg" alt="Logo StackOverflow" />
                 </motion.a> */}
                 <motion.a
                     transition={transition}
                     whileHover={whileHover}
                     href="https://github.com/OndrejVrto"
                 >
-                    <img src={githubLogo} alt="Logo Github" />
+                    <img
+                        alt="Logo Github"
+                        src="/images/social/github-logo.svg"
+                    />
                 </motion.a>
             </div>
         </header>

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { SECTIONS } from "../../App";
+import { motion } from "framer-motion";
 
 const variants = {
     open: {
