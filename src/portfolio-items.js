@@ -1,4 +1,4 @@
-export const CLOUDINARY_ASSET_URL = "https://res.cloudinary.com/vrto/image/upload/q_auto:eco/f_auto/personal-web";
+export const CLOUDINARY_ASSET_URL = "https://res.cloudinary.com/vrto/image/upload/t_ov/personal-web";
 
 export const PORTFOLIO_ITEMS = [
     {
