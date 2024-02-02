@@ -43,14 +43,14 @@ const LIST = {
     graphics: [
         { title: "Gimp", skill: 60, image: "gimp.svg" },
         { title: "Inscape", skill: 50, image: "inscape.svg" },
-        { title: "Autodesk Inventor", skill: 100, image: "autodesk-inventor.png" },
-        { title: "Autodesk Autocad", skill: 80, image: "autodesk-autocad.png" },
+        { title: "Autodesk Inventor", skill: 100, image: "autodesk-inventor.svg" },
+        { title: "Autodesk Autocad", skill: 80, image: "autodesk-autocad.svg" },
         { title: "SolidWorks", skill: 60, image: "solidworks.svg" },
     ],
 
     education: [
         { title: "Udemy", skill: 100, image: "udemy.svg" },
-        { title: "Skillmea", skill: 100, image: "skillmea-blue.png" },
+        { title: "Skillmea", skill: 100, image: "skillmea.svg" },
         { title: "YouTube", skill: 100, image: "youtube.svg" },
         { title: "Discord", skill: 100, image: "discord.svg" },
         { title: "Laracast", skill: 100, image: "laracast.svg" },
