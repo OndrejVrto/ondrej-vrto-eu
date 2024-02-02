@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import { CLOUDINARY_ASSET_URL } from "../../portfolio-items";
+import { CLOUDINARY_ASSET } from "../../portfolio-items";
+
+const imgHero = "/personal-web/photo/ai-generated-portrait-for-ondrej-vrto.png";
+const imgSmall = CLOUDINARY_ASSET + "t_ov_small" + imgHero;
+const imgMedium = CLOUDINARY_ASSET + "t_ov_medium" + imgHero;
+const imgLarge = CLOUDINARY_ASSET + "t_ov" + imgHero;
 
 const textVariants = {
     initial: {
@@ -101,11 +106,9 @@ const Hero = () => {
 
             <div className="images">
                 <img
-                    alt="Ondrej Vrťo. Portrét generovaný AI podľa fotografií."
-                    src={
-                        CLOUDINARY_ASSET_URL +
-                        "/photo/ai-generated-portrait-for-ondrej-vrto.png"
-                    }
+                    src={imgLarge}
+                    srcset={`${imgSmall} 320w, ${imgMedium} 640w, ${imgLarge} 900w"`}
+                    sizes="(max-width: 900px) 100vw, 900px"
                 />
             </div>
         </>
