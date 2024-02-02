@@ -3,7 +3,7 @@ function Footer() {
         <footer>
             <div className="footer-wrapper">
                 <div className="copyright">
-                    <a href="#navbar">
+                    <a href="#navbar" aria-label="Go to top of page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
