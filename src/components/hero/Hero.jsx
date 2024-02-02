@@ -106,6 +106,7 @@ const Hero = () => {
 
             <div className="images">
                 <img
+                    alt="Ondrej Vrťo. Portrét generovaný AI podľa fotografií."
                     src={imgLarge}
                     srcset={`${imgSmall} 320w, ${imgMedium} 640w, ${imgLarge} 900w"`}
                     sizes="(max-width: 900px) 100vw, 900px"
