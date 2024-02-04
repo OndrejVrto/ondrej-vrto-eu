@@ -4,15 +4,15 @@ import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import Sidebar from "./components/sidebar/Sidebar";
 import Portfolio from "./components/portfolio/Portfolio";
-// import Biography from "./components/biography/Biography";
+import Biography from "./components/biography/Biography";
 import Technologies from "./components/technologies/Technologies";
 
 export const SECTIONS = [
     { id: "hero", title: "Domov", element: <Hero /> },
     { id: "technologies", title: "Technológie", element: <Technologies /> },
     { id: "portfolio", title: "Portfólio", element: <Portfolio /> },
-    // { id: "biography", title: "Životopis", element: <Biography /> },
     { id: "contact", title: "Kontakt", element: <Contact /> },
+    { id: "biography", title: "Dokumenty", element: <Biography /> },
 ];
 
 function App() {
