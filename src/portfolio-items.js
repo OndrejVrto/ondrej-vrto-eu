@@ -8,7 +8,7 @@ export const PORTFOLIO_ITEMS = [
         title: "Web na mieru pre Farnosť Detva",
         link: 'https://faradetva.sk',
         github: 'https://github.com/OndrejVrto/faradetva.sk',
-        description: 'Pre Farnosť Detva spravujem webové stránku viac ako 12 rokov. Za ten čas som vytvoril 3 rôzne verzie. Táto je najkomplexnejšia. Obsahuje veľa funkcionalít. Učil som sa na nej Laravel. Má slušne vyladené SEO.',
+        description: 'Pre Farnosť Detva spravujem webovú stránku viac ako 12 rokov. Za ten čas som vytvoril na mieru 3 rôzne verzie. Táto je najkomplexnejšia. Obsahuje veľa funkcionalít. Má pomerne slušne vyladené SEO a hlavne veľa jedinečného obsahu.',
         tags: ['web'],
         thumbnail: { src: "/portfolio/Thumbmails/01-faradetva.jpg", title: "Náhľad projektu: Web na mieru pre Farnosť Detva" },
         gallery: [
@@ -102,7 +102,7 @@ export const PORTFOLIO_ITEMS = [
         title: "Administrácia cenníka",
         link: 'https://cennik.blueera.sk/admin',
         github: null,
-        description: 'Administrácia konfigurátora cenníka. Pekný vzhľad obaľuje unikátnu a komplexnú logiku. V aplikácii je totiž možné dynamicky meniť vzťahy medzi otázkami, prípadne medzi odpoveďami a následnými otázkami.',
+        description: 'Administrácia konfigurátora cenníka. Pekný vzhľad obaľuje unikátnu a komplexnú logiku. V aplikácii je totiž možné dynamicky meniť vzťahy medzi odpoveďami, prípadne zobrazovať dodatočné otázky na základe predchádzajúcich odpovedí. Pod-otázky môžu byť vnorené v niekoľkých úrovniach. Táto logika je ukladaná v MySQL v rozšírených pivot tabuľkách.',
         tags: ['configurator', 'admin'],
         thumbnail: { src: "/portfolio/Thumbmails/05-cennik-blueera-admin.jpg", title: "Náhľad projektu: Administrácia cenníka" },
         gallery: [
