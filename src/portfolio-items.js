@@ -35,7 +35,7 @@ export const PORTFOLIO_ITEMS = [
         title: "Custom CMS pre web Farnosti Detva",
         link: null,
         github: 'https://github.com/OndrejVrto/faradetva.sk',
-        description: 'CMS pre na mieru. Vďaka tomuto projektu, som sa naučil Laravel. Obsahuje veľké množstvo rôznej funkcionality. Napr.: Perfektnú správu obrázkov so zadávaním zdrojov.',
+        description: 'CMS na mieru. Vďaka tomuto projektu, som sa naučil Laravel. Obsahuje veľké množstvo rôznej funkcionality. Napr.: Perfektnú správu obrázkov so zadávaním licencií z ktorých sa následne generuje komplexný Schema markup JSON. A keďže som sa učil, tak obsahuje aj kopu začiatočníckych chýb, ktoré postupne refaktorujem.',
         tags: ['admin', 'cms'],
         thumbnail: { src: "/portfolio/Thumbmails/02-faradetva-admin.jpg", title: "Náhľad projektu: Custom CMS pre web Farnosti Detva" },
         gallery: [
@@ -58,7 +58,7 @@ export const PORTFOLIO_ITEMS = [
         title: "PHP balíček na kreslenie SVG grafov",
         link: null,
         github: 'https://github.com/OndrejVrto/php-linechart',
-        description: 'Chcete generovať jednoduché grafy podobné bez čísel a zbytočných detailov? Tu je moje riešenie napísané v php. Výslekom je optimalizovaný SVG obrázok.',
+        description: 'Chcete generovať jednoduché grafy bez čísel a zbytočných detailov? Tu je moje riešenie napísané v php. Výslekom je optimalizovaný SVG obrázok.',
         tags: ['package'],
         thumbnail: { src: "/portfolio/Thumbmails/03-php-linechart.jpg", title: "Náhľad projektu: PHP balíček na kreslenie SVG grafov" },
         gallery: [
@@ -128,7 +128,7 @@ export const PORTFOLIO_ITEMS = [
         title: "Balíček Laravel na sumarizáciu návštevnosti stránok",
         link: null,
         github: 'https://github.com/OndrejVrto/laravel-visitors',
-        description: 'Tento nástroj umožňuje základné sledovanie aktivity užívateľa bez použitia cookies alebo súhlasu podľa európskych smerníc GDPR. Celkové štatistiky, ktorých generovanie trvá dlho, vytvára na pozadí, a preto je zobrazovanie výsledkov aj pri veľkých objemoch dát rýchle.',
+        description: 'Tento nástroj umožňuje základné sledovanie aktivity užívateľa bez použitia cookies alebo súhlasu podľa európskych smerníc GDPR. Celkové štatistiky, ktorých generovanie trvá dlho, sa vytvárajú pomocou Queue a preto je zobrazovanie výsledkov aj pri veľkých objemoch dát rýchle.',
         tags: ['package'],
         thumbnail: { src: "/portfolio/Thumbmails/06-laravel-visitors.jpg", title: "Náhľad projektu: Balíček Laravel na sumarizáciu návštevnosti stránok" },
         gallery: [
