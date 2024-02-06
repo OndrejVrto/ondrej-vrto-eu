@@ -8,7 +8,7 @@ function Biography() {
         <>
             <div className="wrapper developer">
                 <a
-                    href="/public/curriculum/ing-ondrej-vrto-ise-zivotopis-programator.pdf"
+                    href="/curriculum/ing-ondrej-vrto-iwe-zivotopis-programator.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function Biography() {
                     </motion.div>
                 </a>
                 <a
-                    href="/public/curriculum/ing-ondrej-vrto-ise-certifikaty-programator.pdf"
+                    href="/curriculum/ing-ondrej-vrto-iwe-certifikaty-programator.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Biography() {
             <h2>Strojár</h2>
             <div className="wrapper engineer">
                 <a
-                    href="/public/curriculum/ing-ondrej-vrto-ise-zivotopis-strojar.pdf"
+                    href="/curriculum/ing-ondrej-vrto-iwe-zivotopis-strojar.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
@@ -54,7 +54,7 @@ function Biography() {
                     </motion.div>
                 </a>
                 <a
-                    href="/public/curriculum/ing-ondrej-vrto-ise-certifikaty-strojar.pdf"
+                    href="/curriculum/ing-ondrej-vrto-iwe-certifikaty-strojar.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
