@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
+import DunningKrugerGraph from "./DunningKrugerGraph";
 
 const popoverVariant = {
     initial: {
@@ -47,12 +48,13 @@ export default function Technology({
                 >
                     <h3>{technology.title}</h3>
                     {!progressOff && technology.skill && (
-                        <progress
-                            min="0"
-                            max="100"
-                            className={skillColor}
-                            value={technology.skill}
-                        />
+                        // <progress
+                        //     min="0"
+                        //     max="100"
+                        //     className={skillColor}
+                        //     value={technology.skill}
+                        // />
+                        <DunningKrugerGraph value={technology.skill} />
                     )}
                 </motion.div>
             )}
