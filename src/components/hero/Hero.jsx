@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { CLOUDINARY_ASSET } from "../../portfolio-items";
 
 const imgHero = "/personal-web/photo/ai-generated-portrait-for-ondrej-vrto.png";
-const imgSmall = CLOUDINARY_ASSET + "t_ov_small" + imgHero;
-const imgMedium = CLOUDINARY_ASSET + "t_ov_medium" + imgHero;
-const imgLarge = CLOUDINARY_ASSET + "t_ov" + imgHero;
+const imgSmall = CLOUDINARY_ASSET + "c_scale,w_320/q_auto:eco/f_auto" + imgHero;
+const imgMedium =
+    CLOUDINARY_ASSET + "c_scale,w_640/q_auto:eco/f_auto" + imgHero;
+const imgLarge = CLOUDINARY_ASSET + "q_auto:eco/f_auto" + imgHero;
 
 const textVariants = {
     initial: {
