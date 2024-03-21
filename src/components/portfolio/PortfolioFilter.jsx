@@ -16,13 +16,13 @@ export default function PortfolioFilter({ handleFilter }) {
 
     return (
         <div id="portfolio-filter">
-            <button
+            {/* <button
                 aria-description="Filtrovať výsledky podľa kľúčového slova: Konfigurátor"
                 onClick={() => handleTag("configurator")}
                 className={getClassButton("configurator")}
             >
                 Konfigurátory
-            </button>
+            </button> */}
             <button
                 aria-description="Filtrovať výsledky podľa kľúčového slova: Administrácia"
                 onClick={() => handleTag("admin")}
